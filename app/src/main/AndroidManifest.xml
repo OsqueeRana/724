@@ -14,6 +14,9 @@
         android:theme="@style/Theme.724"
         tools:targetApi="31">
         <activity
+            android:name=".InquiryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChargeActivity"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +33,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
