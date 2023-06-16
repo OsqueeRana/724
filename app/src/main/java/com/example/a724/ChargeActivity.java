@@ -53,8 +53,12 @@ public class ChargeActivity extends AppCompatActivity {
                 operator = "3";
             }
             try {
-                chargeSIM("{MobileNo:" + phoneNo.getText() + "OperatorType: " + operator +
-                        ",AmountPure: " + amount.getText() + ",mid:0}");
+                chargeSIM("{\n" +
+                                "    \"MobileNo\": \"" + phoneNo.getText() + "\",\n" +
+                                "    \"OperatorType\": " + operator + ",\n" +
+                                "    \"AmountPure\": " + amount.getText() + ",\n" +
+                                "    \"mid\": \"0\"\n" +
+                                "}");
             } catch (IOException e) {
                 Toast.makeText(this, "ارور ناشناخته", Toast.LENGTH_SHORT).show();
             }
